@@ -3,6 +3,6 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        Theatre theatre = new Theatre("Olympian", 8, 12);
     }
 }
