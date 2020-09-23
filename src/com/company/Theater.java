@@ -6,7 +6,7 @@ public class Theater {
     private final String theatreName;
     private List<Seat> seats = new ArrayList<>();
 
-    public Theatre(String theatreName, int numRows, int seatsPerRow) {
+    public Theater(String theatreName, int numRows, int seatsPerRow) {
         this.theatreName = theatreName;
 
         int lastRow = 'A' + (numRows -1);
