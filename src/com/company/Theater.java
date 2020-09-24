@@ -11,6 +11,7 @@ public class Theater {
         this.theatreName = theatreName;
 
         int lastRow = 'A' + (numRows - 1);
+        System.out.println("numRows: "+numRows+" lastRow: "+lastRow);
         for (char row = 'A'; row <= lastRow; row++) {
             for (int seatNum = 1; seatNum <= seatsPerRow; seatNum++) {
                 Seat seat = new Seat(row + String.format("%02d", seatNum));
