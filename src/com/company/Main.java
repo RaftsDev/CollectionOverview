@@ -11,6 +11,7 @@ public class Main {
             System.out.println("Sorry, seat is taken");
         }
 
+        theater.getSeats();
 
     }
 }
