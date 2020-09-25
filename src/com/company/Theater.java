@@ -29,7 +29,7 @@ public class Theater {
     public boolean reserveSeat(String seatNumber) {
         Seat requestedSeat = null;
         for (Seat seat : seats) {
-            System.out.print(".");
+            System.out.print(".");// to check processing time of search
             if (seat.getSeatNumber().equals(seatNumber)) {
                 requestedSeat = seat;
                 break;
