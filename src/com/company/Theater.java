@@ -1,11 +1,12 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Theater {
     private final String theatreName;
-    private List<Seat> seats = new ArrayList<>();
+    private List<Seat> seats = new LinkedList<>();
 
     public Theater(String theatreName, int numRows, int seatsPerRow) {
         this.theatreName = theatreName;
