@@ -4,7 +4,8 @@ import java.util.*;
 
 public class Theater {
     private final String theatreName;
-    private Collection<Seat> seats = new HashSet<>();
+    //private Collection<Seat> seats = new HashSet<>(); //Not sorted in order
+    private Collection<Seat> seats = new LinkedHashSet<>();
 
     public Theater(String theatreName, int numRows, int seatsPerRow) {
         this.theatreName = theatreName;
