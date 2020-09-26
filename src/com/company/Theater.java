@@ -28,6 +28,7 @@ public class Theater {
 
     public boolean reserveSeat(String seatNumber) {
 
+        // Internal code of BinarySearch method
         int low = 0;
         int high = seats.size()-1;
 
@@ -48,6 +49,7 @@ public class Theater {
         System.out.println("There is no seat " + seatNumber);
         return false;
 
+        //Code for calling binarySearch method
 //        Seat requestedSeat = new Seat(seatNumber);
 //        int foundSeat = Collections.binarySearch(seats, requestedSeat, null);
 //        if(foundSeat>=0){
