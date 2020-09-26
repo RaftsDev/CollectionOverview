@@ -11,7 +11,11 @@ public class Main {
             System.out.println("Sorry, seat is taken");
         }
 
-        theater.reserveSeat("H11");
+        if(theater.reserveSeat("H11")) {
+            System.out.println("Please pay");
+        } else {
+            System.out.println("Sorry, seat is taken");
+        }
 
         theater.getSeats();
 
