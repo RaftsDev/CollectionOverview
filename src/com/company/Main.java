@@ -10,6 +10,15 @@ public class Main {
         List<Theater.Seat> seatCopy= new ArrayList<>(theater.seats);//shallowCopy
         printList(seatCopy);
 
+        // check references to same data of both ArrayList
+
+        seatCopy.get(1).reserve();
+        if(theater.reserveSeat("A02")){
+            System.out.println("Pay for reserve");
+        }else{
+            System.out.println("seat already reserved");
+        }
+
 /*
         if(theater.reserveSeat("H11")) {
             System.out.println("Please pay");
