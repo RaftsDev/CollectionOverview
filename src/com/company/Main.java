@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -18,6 +19,14 @@ public class Main {
         }else{
             System.out.println("seat already reserved");
         }
+
+        // Review result of sorting
+
+        Collections.reverse(seatCopy);
+        System.out.println("Printing seatCopy:");
+        printList(seatCopy);
+        System.out.println("Printing theater.seats");
+        printList(theater.seats);
 
 /*
         if(theater.reserveSeat("H11")) {
