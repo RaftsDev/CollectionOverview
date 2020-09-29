@@ -27,6 +27,9 @@ public class Main {
         printList(seatCopy);
         System.out.println("Printing theater.seats");
         printList(theater.seats);
+        Collections.shuffle(seatCopy);
+        System.out.println("Try shuffle method");
+        printList(seatCopy);
 
 /*
         if(theater.reserveSeat("H11")) {
