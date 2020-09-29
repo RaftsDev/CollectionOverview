@@ -6,7 +6,7 @@ public class Theater {
     private final String theatreName;
     //private Collection<Seat> seats = new HashSet<>(); //Not sorted in order
     //private Collection<Seat> seats = new TreeSet<>(); //Error
-    private List<Seat> seats = new ArrayList<>();
+    public List<Seat> seats = new ArrayList<>();
 
     public Theater(String theatreName, int numRows, int seatsPerRow) {
         this.theatreName = theatreName;
@@ -84,7 +84,7 @@ public class Theater {
         }
     }
 
-    private class Seat implements Comparable<Seat> {
+    public class Seat implements Comparable<Seat> {
         private final String seatNumber;
         private boolean reserved = false;
 
