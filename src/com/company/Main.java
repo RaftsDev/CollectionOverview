@@ -31,6 +31,8 @@ public class Main {
         System.out.println("Try shuffle method");
         printList(seatCopy);
 
+        // Getting min and max numbers of a sets.
+
         Theater.Seat minSeat = Collections.min(seatCopy);
         Theater.Seat maxSeat = Collections.max(seatCopy);
 
