@@ -44,6 +44,8 @@ public class Main {
         List<Theater.Seat> deepCopyList = new ArrayList<>(theater.seats);
         Collections.copy(deepCopyList, theater.seats);
         printList(deepCopyList);
+
+
 /*
         if(theater.reserveSeat("H11")) {
             System.out.println("Please pay");
