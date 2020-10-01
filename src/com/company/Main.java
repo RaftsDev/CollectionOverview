@@ -41,7 +41,7 @@ public class Main {
 
         //Make a deep copy
 
-        List<Theater.Seat> deepCopyList = new ArrayList<>(theater.seats);
+        List<Theater.Seat> deepCopyList = new ArrayList<>(theater.seats.size());
         Collections.copy(deepCopyList, theater.seats);
         printList(deepCopyList);
 
