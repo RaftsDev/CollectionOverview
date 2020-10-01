@@ -42,7 +42,11 @@ public class Main {
         //Make a deep copy over empty sample
 
         List<Theater.Seat> deepCopyList = new ArrayList<>(theater.seats.size());
+        for(int i = 0; i < theater.seats.size(); i++){
+            deepCopyList.add(null);
+        }
         Collections.copy(deepCopyList, theater.seats);
+        System.out.println("Deepcopy list:");
         printList(deepCopyList);
 
         deepCopyList.get(2).reserve();
