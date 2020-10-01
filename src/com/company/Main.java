@@ -45,7 +45,12 @@ public class Main {
         Collections.copy(deepCopyList, theater.seats);
         printList(deepCopyList);
 
-
+        deepCopyList.get(2).reserve();
+        if(theater.reserveSeat("A03")){
+            System.out.println("Pay for reserve");
+        }else{
+            System.out.println("seat already reserved");
+        }
 /*
         if(theater.reserveSeat("H11")) {
             System.out.println("Please pay");
