@@ -38,6 +38,12 @@ public class Main {
 
         System.out.println("Min seat number is:"+minSeat.getSeatNumber());
         System.out.println("Max seat number is:"+maxSeat.getSeatNumber());
+
+        //Make a deep copy
+
+        List<Theater.Seat> deepCopyList = new ArrayList<>(theater.seats);
+        Collections.copy(deepCopyList, theater.seats);
+        printList(deepCopyList);
 /*
         if(theater.reserveSeat("H11")) {
             System.out.println("Please pay");
