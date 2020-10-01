@@ -39,7 +39,7 @@ public class Main {
         System.out.println("Min seat number is:"+minSeat.getSeatNumber());
         System.out.println("Max seat number is:"+maxSeat.getSeatNumber());
 
-        //Make a deep copy
+        //Make a deep copy over empty sample
 
         List<Theater.Seat> deepCopyList = new ArrayList<>(theater.seats.size());
         Collections.copy(deepCopyList, theater.seats);
